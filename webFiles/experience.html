@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(51, 51, 51)">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="bio_page.html">Bio Page<span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link" href="experience.html">Experience Page</a>
+            <a id='view_socials' class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                View Socials
+            </a>
+            <div id='socials' class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a href="https://www.linkedin.com/in/eliascruz25/">LinkedIn</a></li>
+                <li><a href="https://github.com/eli2412">GitHub</a></li>
+            </div>
+</nav>
+<script>
+    $(document).ready(function () {
+        $('#socials').hide();
+        $('#view_socials').on('click', function () {
+            $('#socials').toggle(1000);
+        })
+    })
+</script>
+
+<body>
+    <h1>Experience and Education</h1>
+    <br />
+    <header>
+        <h2>GCU</h2>
+        <p>I was in university for a few years trying to finish up my exercise science degree but in the last
+            couple of years I switched to computer science. Although I didn't finish, I learned quite a lot from
+            the classes I took.
+        </p>
+    </header>
+    <main>
+        <aside>
+            <h3>Classes</h3>
+            <p>During my time in university, I learned Java, C# and front end development as well. All of this
+                sparked my interest in software developement. I learned the basic fundamentals and also created small
+                projects.
+                I also learned some data structures and algorithms which was intresting to know the time processes in
+                computing.
+            </p>
+        </aside>
+        <h2>Infosys</h2>
+        <p>Before working at Infosys, I joined a bootcamp called New apprenticeship. Here I was taught ServiceNow and
+            to make tickets, read tickets and use their workflow app. This helped me land my position at Infosys and work as a tech
+            support associate.
+        <aside>
+            <h3>Role</h3>
+            <p>
+                My time at Infosys was an experience. I was taught SQL and a bit more of python to go along with it.
+                I was also taught in how to create Grafana Dashboard and put data in a more appealing and visual way.
+                Although,
+                I couldn't get much experience. It was one step towards my career goals.
+            </p>
+        </aside>
+        </p>
+    </main>
+    <footer>
+        <h2>Future</h2>
+        <p>I am now on the road in becoming a cloud engineer at Deloitte and am excited for how the future will play
+            out.
+            With the help of Deloitte and Mulitverse, I am closer to making my path towards to my goals.
+        </p>
+    </footer>
+    <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item" aria-current="page">
+            <a class="page-link" href="portfolio.html">Previous</a>
+            </span>
+            <li class="page-item"><a class="page-link" href="bio_page.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="portfolio.html">2</a></li>
+            <li class="page-item active"><a class="page-link" href="experience.html">3</a></li>
+          </li>
+        </ul>
+      </nav>
+</body>
+
+</html>
